@@ -6,7 +6,7 @@ use App\Customer;
 use App\Shipping;
 use Illuminate\Http\Request;
 use Mail;
-use Session;
+use Illuminate\Support\Facades\Session;
 use Cart;
 
 class CustomerController extends Controller

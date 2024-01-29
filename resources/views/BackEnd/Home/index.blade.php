@@ -104,12 +104,5 @@
 
     </div>
 
-
-
-
-
-
-
-
-@endsection
+    @endsection
 

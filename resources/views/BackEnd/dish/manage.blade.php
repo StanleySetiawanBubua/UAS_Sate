@@ -1,7 +1,7 @@
 @extends('BackEnd.master')
 
 @section('title')
-    Dish Manage
+    Atur Hidangan
 @endsection
 
 @section('content')
@@ -19,7 +19,7 @@
     <div class="card my-5">
 
         <div class="card-header">
-            <h5 class="fw-bold text-center">Manage Dish</h5><br>
+            <h5 class="fw-bold text-center">Atur Hidangan</h5><br>
         </div>
 
         <!-- /.card-header -->
@@ -28,13 +28,13 @@
                 <thead>
 
                 <tr>
-                    <th>SL</th>
-                    <th>Dish Name</th>
-                    <th>Category Name</th>
-                    <th>Dish Details</th>
-                    <th>Dish Image</th>
-                    <th>Added On</th>
-                    <th>Action</th>
+                    <th>No</th>
+                    <th>Nama Hidangan</th>
+                    <th>Kategori</th>
+                    <th>Detail</th>
+                    <th>Gambar</th>
+                    <th>Ditambah Pada</th>
+                    <th>Tindakan</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -90,7 +90,7 @@
 
                                 <div class="modal-header">
 
-                                    <h5 class="modal-title">Update Dish Data</h5>
+                                    <h5 class="modal-title">Update Data Hidangan</h5>
 
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 
@@ -101,30 +101,30 @@
                                     <form action="{{ route('update_dish') }}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group">
-                                            <label>Name</label>
+                                            <label>Nama</label>
                                             <input type="text" class="form-control" name="dish_name" value="{{ $dish->dish_name }}">
                                             <input type="hidden" class="form-control" name="dish_id" value="{{ $dish->dish_id }}">
                                         </div>
                                         <div class="form-group">
-                                            <label>Category</label>
+                                            <label>Kategori</label>
                                             <select name="category_id" class="form-control">
-                                                <option>----Select Category----</option>
+                                                <option>----Pilih Kategori----</option>
                                                 @foreach($categories as $cate)
                                                     <option value="{{ $cate->category_id }}" {{ ($dish->category_id==$cate->category_id)?"selected":"" }}> {{ $cate->category_name }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
                                         <div class="form-group">
-                                            <label >Details</label>
+                                            <label >Detail</label>
                                             <textarea type="text" name="dish_detail" class="form-control" rows="5">{{ $dish->dish_detail }}</textarea>
                                         </div>
                                         <div class="form-group">
-                                            <label>Previous Image</label>
+                                            <label>Gambar Sebelumnya</label>
                                             <img src="{{ asset($dish->dish_image) }}" style="height: 150px; width: 150px; border-radius: 50%">
                                             <input type="file" class="form-control" name="dish_image" accept="image/*">
                                         </div>
                                         <div class="form-group">
-                                            <label>Dish Price</label>
+                                            <label>Harga Hidangan</label>
                                             <input type="text" class="form-control"  name="full_price" value="{{ $dish->full_price }}">
                                         </div>
                                         <div class="form-group">

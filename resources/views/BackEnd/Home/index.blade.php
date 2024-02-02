@@ -8,7 +8,7 @@
 
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-center mb-4">
-            <h1 class="h3 mb-0 text-gray-800 "><strong>Welcome to the Admin Panel</strong></h1>
+            <h1 class="h3 mb-0 text-gray-800 "><strong>Selamat Datang di Panel Admin</strong></h1>
         </div>
 
         <!-- Content Row -->
@@ -22,16 +22,16 @@
                         @endphp
                         <div class="row no-gutters align-items-center ">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">New Orders !!!</div>
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pesanan Baru !!!</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    <h4>Total Orders {{ $OrderCount }} </h4>
+                                    <h4>Total Pesanan {{ $OrderCount }} </h4>
                                 </div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-calendar fa-2x text-gray-300"></i>
                             </div>
                         </div>
-                        <a href="{{ route('show_order') }}" class="small-box-footer" style="color: #0e882a">Show Order <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('show_order') }}" class="small-box-footer" style="color: #0e882a">Tampilkan Pesanan <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                             <div class="col mr-2">
                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total {{ $CustomerCount }}!</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    <h4>Registered Customer</h4>
+                                    <h4>Pelanggan Terdaftar</h4>
                                 </div>
                             </div>
                             <div class="col-auto">
@@ -55,27 +55,7 @@
                     </div>
                 </div>
             </div>
-              <div class="col-xl-3 col-md-3 mb-4 ">
-                <div class="card border-left-primary shadow h-100 py-2 bg-danger">
-                    <div class="card-body  ">
-                        @php
-                            $OrderCount = App\Order::all()->count();
-                        @endphp
-                        <div class="row no-gutters align-items-center ">
-                            <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Event Reservation Orders !!!</div>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    <h4>Event Reservation {{ $OrderCount }} </h4>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                            </div>
-                        </div>
-                        <a href="{{ route('show_order') }}" class="small-box-footer" style="color: #0e882a">Show Order <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-            </div>
+              
 
 
             <div class="col-xl-3 col-md-3 mb-4 ">
@@ -86,16 +66,16 @@
                         @endphp
                         <div class="row no-gutters align-items-center ">
                             <div class="col mr-2">
-                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Event Reservation Orders !!!</div>
+                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pemesanan Acara !!!</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">
-                                    <h4>Event Reservation {{ $OrderCount }} </h4>
+                                    <h4>Pesanan Acara {{ $OrderCount }} </h4>
                                 </div>
                             </div>
                             <div class="col-auto">
                                 <i class="fas fa-calendar fa-2x text-gray-300"></i>
                             </div>
                         </div>
-                        <a href="{{ route('show_order') }}" class="small-box-footer" style="color: #0e882a">Show Order <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('show_order') }}" class="small-box-footer" style="color: #0e882a">Tampilkan Pesanan <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
             </div>

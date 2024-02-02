@@ -34,38 +34,38 @@
     <div class="container">
         <div class="w3_footer_grids">
             <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>company</h3>
+                <h3>Perusahaan</h3>
                 <ul>
-                    <li><a href="{{ route('about')}}">About Us</a></li>
-                    <li><a href="{{ route('contact')}}">Contact Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Partner With Us</a></li>
+                    <li><a href="{{ route('about')}}">Tentang Kami</a></li>
+                    <li><a href="{{ route('contact')}}">Hubungi Kami</a></li>
+                    <li><a href="#">Karir</a></li>
+                    <li><a href="#">Jadilah Mitra Kami</a></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>help</h3>
+                <h3>Bantuan</h3>
                 <ul>
                     <li><a href="{{ route('help')}}">FAQ</a></li>
-                    <li><a href="#">Returns</a></li>
-                    <li><a href="#">Order Status</a></li>
-                    <li><a href="{{ route('offers')}}">Offers</a></li>
+                    <li><a href="#">Pengembalian</a></li>
+                    <li><a href="#">Status Pemesanan</a></li>
+                    <li><a href="{{ route('offers')}}">Penawaran</a></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
-                <h3>policy info</h3>
+                <h3>Informasi Kebijakan</h3>
                 <ul>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Kebijakan Pengembalian</a></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-sm-3 footer-grids w3-agileits">
                 <h3>Menu</h3>
                 <ul>
-                    <li><a href="#">All Day Menu</a></li>
-                    <li><a href="#">Lunch</a></li>
-                    <li><a href="#">Dinner</a></li>
-                    <li><a href="#">Flavours</a></li>
+                    <li><a href="#">Menu Sepanjang Hari</a></li>
+                    <li><a href="#">Menu Siang</a></li>
+                    <li><a href="#">Menu Malam</a></li>
+                    <li><a href="#">Rasa</a></li>
                 </ul>
             </div>
             <div class="clearfix"> </div>
@@ -74,6 +74,6 @@
 </div>
 <div class="copyw3-agile">
     <div class="container">
-        <p>&copy; 2021 Online Food Catering Service. All rights reserved | Design by <a href="http://w3layouts.com/">Md. Abir Hasan</a></p>
+        <p>&copy; 2024 | <a href="https://github.com/StanleySetiawanBubua/UAS_Sate">Stanley</a></p>
     </div>
 </div>

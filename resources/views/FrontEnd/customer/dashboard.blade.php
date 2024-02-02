@@ -31,7 +31,7 @@
                         <div class="w3ls-header-left">
                             <a href="{{ url('/') }}">
                                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                <span style="color: white">Back To More</span>
+                                <span style="color: white">Kembali Untuk Lebih Lanjut</span>
                             </a>
                         </div>
                         <div class="w3ls-header-right">
@@ -75,8 +75,8 @@
         <div class="wthree-order">
 
             <div class="container">
-                <h3 class="w3ls-title">Welcome {{ $customer->name }}...!</h3>
-                <p class="w3lsorder-text">Here You can customize your <strong>Wishlist Order</strong>.</p>
+                <h3 class="w3ls-title">Selamat Datang {{ $customer->name }}...!</h3>
+                <p class="w3lsorder-text">Disini Anda dapat Menyesuaikan <strong>Daftar Keinginan Anda</strong>.</p>
                 <hr/>
                 <div class="order-agileinfo">
                     <div class="col-md-10 col-sm-10 col-xs-10 order-w3lsgrids">
@@ -96,10 +96,10 @@
                                 <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Dish Name</th>
-                                    <th scope="col">Image</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Action</th>
+                                    <th scope="col">Nama Hidangan</th>
+                                    <th scope="col">Gambar</th>
+                                    <th scope="col">Harga</th>
+                                    <th scope="col">Tindakan</th>
                                 </tr>
                                 </thead>
 
@@ -127,7 +127,7 @@
                                     </tr>
                                 @empty
                                     <tr>
-                                        <td colspan="5" style="text-align: center; color: #0b2e13; font-size: 24px" >Oops... No Wishlist Found</td>
+                                        <td colspan="5" style="text-align: center; color: #0b2e13; font-size: 24px" >Tidak Ada Daftar Keinginan</td>
                                     </tr>
                                 @endforelse
 
@@ -136,10 +136,10 @@
                                 {{-- <tfoot>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col">Product Name</th>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Action</th>
+                                        <th scope="col">Nama Produk</th>
+                                        <th scope="col">Gambar</th>
+                                        <th scope="col">Harga</th>
+                                        <th scope="col">Tindakan</th>
                                     </tr>
                                 </tfoot> --}}
 

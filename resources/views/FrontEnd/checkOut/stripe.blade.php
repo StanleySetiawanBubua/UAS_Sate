@@ -1,7 +1,7 @@
 @extends('FrontEnd.master')
 
 @section('title')
-    Stripe | Payment
+    ATM | Pembayaran
 @endsection
 
 @section('content')
@@ -11,22 +11,22 @@
             <div class="col-md-9 product-w3ls-right">
                 <div class="card">
 
-                    <h1 class="card-title">Thanks for Purchasing With us..!</h1>
+                    <h1 class="card-title">Terimakasih Sudah Membeli Produk Kami</h1>
                     <div class="card-body">
                         <hr>
                         <div class="col-md-6">
                             <div class="card">
-                                <div class="card-header text-truncate" style="font-size: 28px">Your order has been placed !!!</div>
+                                <div class="card-header text-truncate" style="font-size: 28px">Pesanan Anda Telah Disiapkan</div>
                                 <div class="card-body">
-                                    <strong class="text-bold" style="font-size: 20px">Your payable amount is
+                                    <strong class="text-bold" style="font-size: 20px">Total yang perlu Anda bayar adalah
                                         @if(Session::get('sum') ==null)
-                                             00 Tk.
+                                             00 Ribu
                                         @else
-                                            {{ Session::get('sum') }} Tk.
+                                            Rp. {{ Session::get('sum') }} Rupiah.
                                         @endif
                                     </strong>
                                     <br>
-                                    <strong style="font-size: 20px">Please make payment by entering your Credit or Debit cart.</strong>
+                                    <strong style="font-size: 20px">Silakan lakukan pembayaran dengan memasukkan kartu Kredit atau Debit Anda.</strong>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <script src="https://js.stripe.com/v3/"></script>
-                                    <div class="card-header text-capitalize text-truncate" style="font-size: 28px">Enter Your Cart Info Carefully.</div>
+                                    <div class="card-header text-capitalize text-truncate" style="font-size: 28px">Masukkan Info Kartu Anda dengan Hati-hati.</div>
                                     <form role="form" action="{{ route('stripe.payment') }}"
                                           method="post" data-cc-on-file="false"
                                           data-stripe-publishable-key="{{ env('pk_test_51HTKp9BuTVgAN0HdkZKLw4srvSIMG4QK6RvogtcoVg067evXuKEmpuis1Ki4pFDC5UjvbCEhnKFJLoLpdNLLAkkA00Pw8Vr0pc') }}"
@@ -45,16 +45,16 @@
 
                                         <div class="form-row">
                                             <label>
-                                                Your Name
+                                                Nama Anda
                                             </label>
-                                            <input type="text" name="name" placeholder="Enter your name" class="form-control">
+                                            <input type="text" name="name" placeholder="Nama" class="form-control">
                                             <label>
-                                                Your Amount
+                                                Jumlah Anda
                                             </label>
-                                            <input type="text" name="grandTotal" placeholder="Enter your amount" class="form-control">
+                                            <input type="text" name="grandTotal" placeholder="Isi jumlah Anda" class="form-control">
 
                                             <label for="card-element">
-                                                Credit or debit card
+                                                Kartu Debit atau Kredit
                                             </label>
                                             <div id="card-element">
                                                 <!-- A Stripe Element will be inserted here. -->
@@ -62,7 +62,7 @@
                                             <!-- Used to display form errors. -->
                                             <div id="card-errors" role="alert"></div>
                                         </div>
-                                        <button class="btn btn-success mb-2" style="float: right; margin-top: 8px;margin-bottom: 8px;">Submit Payment</button>
+                                        <button class="btn btn-success mb-2" style="float: right; margin-top: 8px;margin-bottom: 8px;">Kirim Pembayaran</button>
                                     </form>
                                 </div>
                             </div>

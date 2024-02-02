@@ -1,7 +1,7 @@
 @extends('FrontEnd.master')
 
 @section('title')
-   About Information
+   Tentang Kami
 @endsection
 
 @section('content')
@@ -10,31 +10,37 @@
 <!-- breadcrumb -->
 	<div class="container">
 		<ol class="breadcrumb w3l-crumbs">
-			<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-			<li class="active">About Us</li>
+			<li><a href="#"><i class="fa fa-home"></i> Beranda</a></li>
+			<li class="active">Tentang Kami</li>
 		</ol>
 	</div>
 	<!-- //breadcrumb -->
 	<!--  about-page -->
 	<div class="about">
 		<div class="container ">
-			<h3 class="w3ls-title w3ls-title1">About Us</h3>
+			<h3 class="w3ls-title w3ls-title1">Tentang Kami</h3>
 			<div class="about-text">
-				<p>O F C S M S Food is a full-service catering based company in Dhaka for all your food catering needs. O F C S M S Food is devoted to delivering healthy, super delicious food and delivery with trusty and timely service to spice up your event.<br>
+				<p>Kami adalah sebuah tim yang bersemangat tentang kelezatan kuliner sate. Dibentuk dari cinta akan cita rasa autentik Indonesia, kami berkomitmen untuk menyajikan pengalaman kuliner yang tak terlupakan kepada pelanggan kami.
 
-Are you planning? - a gorgeous wedding, a corporate event, an office lunch, a new year party, a special day party, private or public parties, religious occasion or anything - we will create an amazingly delicious food experience suited to your taste. We offering a range of healthy and tasty traditional- Deshi, Indian, Chinese, Continental food and Snacks food products, event management service. We provide 100% Halal and Hygienic foods.
+Di Sate Nusantara, kami percaya bahwa sate bukan hanya sekadar hidangan; itu adalah warisan rasa dan budaya yang kami banggakan. Setiap tusukan sate yang kami sajikan merupakan perpaduan sempurna antara bumbu-bumbu tradisional dan bahan-bahan berkualitas tinggi, menghadirkan cita rasa yang otentik dan memikat.
 
-We bring to our customers quality, reliable information and inspirational ideas for every time healthy living through personalized programs and nutritional support. We serve the special events and catering needs of our clients at the location of their choice or at one of our preferred or exclusive venues. We provide fair, flexible, flavorful, and innovative catering and event planning solutions, which we will deliver with proper execution. To be a partner to our clients with the highest integrity, attention-to-detail, practices, and standards, with an end goal of exceeding our clients’ and their guests’ expectations<br>
+Kami tidak hanya mengutamakan kelezatan, tetapi juga kebersihan dan kualitas. Dengan standar kebersihan yang ketat dan proses persiapan yang teliti, kami berkomitmen untuk memberikan hidangan sate yang segar dan aman untuk dinikmati oleh semua pelanggan kami.
 
-We will make your event amazing by bringing gracefulness, style, and particular healthy and super delicious food.</p>
+Lebih dari sekadar sebuah restoran, kami adalah tempat berkumpulnya pecinta kuliner sate. Dari resep klasik hingga inovasi kreatif, kami terus berinovasi dan menghadirkan pengalaman makan yang memuaskan bagi setiap tamu yang datang.
+
+Terima kasih telah memilih Sate Nusantara sebagai destinasi kuliner Anda. Kami berharap Anda menikmati setiap gigitan dari kelezatan sate kami dan merasakan kehangatan keramahan kami dalam setiap kunjungan Anda.
+
+Selamat menikmati dan selamat datang di dunia rasa sate kami!</p>
 				<div class="ftr-toprow">
 					<div class="col-md-4 ftr-top-grids">
 						<div class="ftr-top-left">
 							<i class="fa fa-truck" aria-hidden="true"></i>
 						</div>
 						<div class="ftr-top-right">
-							<h4>Procurement from Reputed Brands</h4>
-							<p>We eat what we cook, so we don’t serve anything that we wouldn’t want ourselves or our friends and family to consume.</p>
+							<h4>Sejarah dan Inspirasi</h4>
+							<p>Situs web ini didirikan dari semangat untuk menghidupkan dan mempromosikan kelezatan kuliner sate.
+Kami terinspirasi oleh kekayaan budaya dan rasa Indonesia yang terkandung dalam setiap hidangan sate.
+Tim kami membawa pengalaman dan pengetahuan yang dalam dalam menciptakan pengalaman kuliner yang autentik dan memuaskan.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -43,12 +49,10 @@ We will make your event amazing by bringing gracefulness, style, and particular 
 							<i class="fa fa-user" aria-hidden="true"></i>
 						</div>
 						<div class="ftr-top-right">
-							<h4>The STAT Mission</h4>
-							<p>We’re on a mission to solve the STAT problem.<br>
-S: Service. Bring professionalism to this sector.<br>
-T: Taste. Food has to taste outstanding every time.<br>
-A: Accuracy. No item can be missed or mixed.<br>
-T: Timeliness. Being late cannot be an excuse. </p>
+							<h4>Komitmen terhadap Kualitas dan Kebersihan</h4>
+							<p>Kami memprioritaskan kualitas dan kebersihan dalam setiap aspek operasional kami, mulai dari pemilihan bahan hingga proses persiapan.
+Standar kebersihan yang tinggi di tempat kami menjamin bahwa setiap hidangan sate yang kami sajikan adalah segar dan aman untuk dinikmati.
+Dengan mengutamakan bahan-bahan berkualitas tinggi dan proses persiapan yang teliti, kami memastikan bahwa setiap gigitan sate memberikan kenikmatan yang sejati bagi para pelanggan kami.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -57,8 +61,10 @@ T: Timeliness. Being late cannot be an excuse. </p>
 							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
 						</div>
 						<div class="ftr-top-right">
-							<h4>Consistently Outstanding Taste</h4>
-							<p>Our customers rave about our food. Just take a look at our Facebook reviews !!!! </p>
+							<h4>Komunitas dan Pengalaman Makan</h4>
+							<p>Lebih dari sekadar sebuah restoran, kami adalah komunitas pecinta kuliner sate yang menyambut semua orang untuk menikmati dan berbagi pengalaman makan.
+Dari resep klasik hingga inovasi kreatif, kami terus berinovasi untuk memberikan pengalaman makan yang tak terlupakan kepada setiap tamu yang datang.
+Kami berkomitmen untuk menciptakan lingkungan yang ramah dan bersahabat, di mana setiap tamu merasa diterima dengan hangat dan dihargai.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -67,12 +73,14 @@ T: Timeliness. Being late cannot be an excuse. </p>
 				<div class="clearfix"> </div>
 			</div>
 			<div class="history">
-				<h3 class="w3ls-title">Welcome to O F C S M S in Dhaka</h3>
-				<p>Are you looking a professional Food Catering Service for your corporate event/office lunch, birthday party or others event in Dhaka?<br>
+				<h3 class="w3ls-title">Selamat Datang di Sate Nusantara dari Bandung</h3>
+				<p>Selamat datang di Sate Nusantara di Bandung, tempat di mana cita rasa otentik Indonesia bertemu dengan keramahan lokal. Nikmati pengalaman kuliner yang memikat dengan beragam pilihan sate yang disajikan dengan bumbu khas dan cita rasa yang menggugah selera. Temukan kelezatan kuliner Indonesia dalam setiap gigitan, sambil merasakan kehangatan keramahtamahan kami yang membuat Anda merasa seperti di rumah. Selamat menikmati!</p>
+				<h3 class="w3ls-title">Acara dan Lokasi</h3>
+				<p>Sate Nusantara di Bandung bukan hanya tentang menyajikan hidangan lezat, tetapi juga tentang menciptakan pengalaman yang tak terlupakan bagi para pengunjungnya. Kami secara rutin mengadakan berbagai event kuliner yang menarik, mulai dari festival sate khas Nusantara hingga kelas memasak untuk para penggemar kuliner yang ingin belajar lebih dalam tentang keajaiban rasa sate.
 
- O F C S M S is the best solution for you. We are dedicated to creating more loyalty, and more opportunities for every client. O F C S M S can consider one of the best Food Catering Services in Dhaka Bangladesh. Because, we ensuring quality food, fast service. We are ready to serve the best corporate food, office lunch, birthday party food, special day catering service, religious occasion catering service, home catering service and service in Dhaka within affordable price. We deliver healthy and hygienic food to your doorstep/office in just time.</p>
-				<h3 class="w3ls-title">Experience and Location</h3>
-				<p>To the success of your event, we ensuring best quality food, fast service, and a sophisticated buffet setting, allowing you to focus on other aspects of the event. O F C S M S has a few years experiences in this Food Catering service sector. We have a very experienced chef and food service team. Our experienced team serves food by maintaining your event to create satisfaction moments. We provide healthy and delicious Home Made food in many places in Dhaka such as- Uttara, Airport,Tongi and more places. Already we work with many catering events and providing food much corporate lunch, breakfast, and dinner service in Dhaka. Our every client is really satisfied with our service.</p>
+Lokasi kami terletak di pusat kota Bandung, yang mudah dijangkau oleh para pengunjung dari berbagai penjuru. Dengan dekorasi yang hangat dan nyaman, serta suasana yang ramah, Sate Nusantara di Bandung adalah tempat yang sempurna untuk berkumpul bersama keluarga dan teman-teman sambil menikmati hidangan sate yang lezat dan suasana yang menyenangkan.
+
+Jangan lewatkan kesempatan untuk bergabung dengan kami dalam setiap event yang kami adakan, atau datanglah langsung ke lokasi kami untuk merasakan kelezatan sate Nusantara yang autentik dan pengalaman makan yang tak terlupakan di tengah kota Bandung yang berwarna.</p>
 			</div>
 		</div>
 	</div>

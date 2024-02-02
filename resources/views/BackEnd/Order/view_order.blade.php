@@ -19,7 +19,7 @@
 
                 <table class="table table-bordered">
                     <tr>
-                        <th>Name</th>
+                        <th>Nama</th>
                         <td>{{ $customer->name }}</td>
                     </tr>
                     <tr>
@@ -27,7 +27,7 @@
                         <td>{{ $customer->email }}</td>
                     </tr>
                     <tr>
-                        <th> Phone Number</th>
+                        <th> Nomor Telepon</th>
                         <td>{{ $customer->phone_no }}</td>
                     </tr>
 
@@ -38,7 +38,7 @@
         <div class="card my-5">
 
             <div class="card-header">
-                <h1 class="text-center text-muted">Order Details Info For This Order</h1>
+                <h1 class="text-center text-muted">Info Detail Pesanan Untuk Pesanan Ini</h1>
             </div>
 
             <!-- /.card-header -->
@@ -46,15 +46,15 @@
 
                 <table class="table table-bordered">
                     <tr>
-                        <th>Order No</th>
+                        <th>No Pesanan</th>
                         <td>{{ $order->order_id }}</td>
                     </tr>
                     <tr>
-                        <th>Order Total</th>
+                        <th>Total Pesanan</th>
                         <td>{{ $order->order_total }}</td>
                     </tr>
                     <tr>
-                        <th> Order Status</th>
+                        <th> Status Pesanan</th>
                         <td>{{ $order->order_status }}</td>
                     </tr>
 
@@ -66,7 +66,7 @@
         <div class="card my-5">
 
             <div class="card-header">
-                <h1 class="text-center text-muted">Shipping Info For This Order</h1>
+                <h1 class="text-center text-muted">Info Pengiriman Untuk Pesanan Ini</h1>
             </div>
 
             <!-- /.card-header -->
@@ -74,7 +74,7 @@
 
                 <table class="table table-bordered">
                     <tr>
-                        <th>Name</th>
+                        <th>Nama</th>
                         <td>{{ $shipping->name }}</td>
                     </tr>
                     <tr>
@@ -82,11 +82,11 @@
                         <td>{{ $shipping->email }}</td>
                     </tr>
                     <tr>
-                        <th> Phone Number</th>
+                        <th> Nomor Telepon</th>
                         <td>{{ $shipping->phone_no }}</td>
                     </tr>
                     <tr>
-                        <th> Address</th>
+                        <th> Alamat</th>
                         <td>{{ $shipping->address }}</td>
                     </tr>
 
@@ -98,7 +98,7 @@
         <div class="card my-5">
 
             <div class="card-header">
-                <h1 class="text-center text-muted">Payment Info For This Order</h1>
+                <h1 class="text-center text-muted">Info Pembayaran Untuk Pesanan Ini</h1>
             </div>
 
             <!-- /.card-header -->
@@ -106,11 +106,11 @@
 
                 <table class="table table-bordered">
                     <tr>
-                        <th>Payment Type</th>
+                        <th>Tipe Bayar</th>
                         <td>{{ $payment->payment_type }}</td>
                     </tr>
                     <tr>
-                        <th>Payment Status</th>
+                        <th>Status Bayar</th>
                         <td>{{ $payment->payment_status }}</td>
                     </tr>
 
@@ -121,7 +121,7 @@
         <div class="card my-5">
 
             <div class="card-header">
-                <h1 class="text-center text-muted">Dish Detail Info For This Order</h1>
+                <h1 class="text-center text-muted">Info Detail Hidangan Untuk Pesanan Ini</h1>
             </div>
 
             <!-- /.card-header -->
@@ -131,12 +131,12 @@
                     <thead>
 
                     <tr>
-                        <th>SL</th>
+                        <th>No</th>
                         <th>Id</th>
-                        <th>Name</th>
-                        <th> Price</th>
-                        <th>Quantity</th>
-                        <th>Total Price</th>
+                        <th>Nama</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Total Harga</th>
                     </tr>
                     </thead>
                     <tbody>

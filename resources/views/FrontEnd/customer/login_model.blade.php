@@ -7,9 +7,9 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
                 <h4 class="modal-header text-center">
-                    Welcome To Food Catering Service.
+                    Selamat Datang di Sate Nusantara
                     <strong class="text-center">
-                        Sign In to your account
+                        Sign In Akun Anda
                     </strong>
                 </h4>
             </div>
@@ -19,11 +19,11 @@
                     <div class="login-agileinfo">
                         <form action="{{ route('check_login') }}" method="post">
                             @csrf
-                            <input class="agile-ltext" type="email" name="email" placeholder="Your email is..." required="">
+                            <input class="agile-ltext" type="email" name="email" placeholder="Email" required="">
 
                             <input class="agile-ltext" type="password" name="password" placeholder="Password" required="">
 
-                            <input type="submit" value="Login In">
+                            <input type="submit" value="Log In">
                         </form>
                     </div>
                 </div>

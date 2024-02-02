@@ -1,7 +1,7 @@
 @extends('BackEnd.master')
 @section('title')
 
-    Dish Add
+    Tambah Hidangan
 @endsection
 @section('content')
     <div class="container">
@@ -19,18 +19,18 @@
 
                 <div class="card">
                     <div class="card-header text-center">
-                        Dish
+                        Tambah Hidangan
                     </div>
                     <div class="card-body">
 
                         <form action="{{ route('save_dish_table') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                                <label>Name</label>
+                                <label>Nama</label>
                                 <input type="text" class="form-control"  name="dish_name" required="">
                             </div>
                             <div class="form-group">
-                                <label>Category</label>
+                                <label>Kategori</label>
                                 <select name="category_id" class="form-control">
                                     <option>----Select Category----</option>
                                     @foreach($categories as $cate)
@@ -39,28 +39,28 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label >Details</label>
+                                <label >Detail</label>
                                 <textarea type="text" name="dish_detail" class="form-control" rows="5" required=""></textarea>
                             </div>
                             <div class="form-group">
-                                <label >Image</label>
+                                <label >Gambar</label>
                                 <input type="file" class="form-control" name="dish_image" accept="image/*">
                             </div>
                             <div class="form-group">
                                 <label>Status</label>
                                 <div class="radio">
-                                    <input type="radio" name="dish_status" value="1">Active
-                                    <input type="radio" name="dish_status" value="0">Inactive
+                                    <input type="radio" name="dish_status" value="1">Aktif
+                                    <input type="radio" name="dish_status" value="0">Tidak Aktif
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Dish Price</label>
+                                <label>Harga Hidangan</label>
                                 <div class="radio">
                                     <input type="text" class="form-control"  name="full_price" placeholder="Enter price" >
                                 </div>
                             </div>
 
-                            <button type="submit" name="btn" class="btn btn-outline-primary">Submit Dish</button>
+                            <button type="submit" name="btn" class="btn btn-outline-primary">Masukkan Hidangan</button>
                         </form>
 
                     </div>

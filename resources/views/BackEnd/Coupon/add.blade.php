@@ -1,7 +1,7 @@
 @extends('BackEnd.master')
 @section('title')
 
-    Coupon Code Add
+    Tambah Kupon
 @endsection
 @section('content')
     <div class="container">
@@ -19,49 +19,49 @@
 
                 <div class="card">
                     <div class="card-header text-center">
-                        Coupon Code
+                        Kode Kupon
                     </div>
                     <div class="card-body">
 
                         <form action="{{ route('save_coupon_code') }}" method="post">
                             @csrf
                             <div class="form-group">
-                                <label>Code Name</label>
+                                <label>Nama Kode</label>
                                 <input type="text" class="form-control"  name="coupon_code" required="">
                             </div>
 
                             <div class="form-group">
-                                <label >Coupon Value</label>
+                                <label >Nilai Kupon</label>
                                 <input type="text" class="form-control" name="coupon_value" required="">
                             </div>
                             <div class="form-group">
-                                <label >Cart Min Value</label>
+                                <label >Nilai Minimum Pembelian</label>
                                 <input type="text" class="form-control" name="cart_min_value" required="">
                             </div>
                             <div class="form-group">
-                                <label>Expired Date</label>
+                                <label>Tanggal Kadaluwarsa</label>
                                 <input type="date" class="form-control" name="expired_on" required="">
                             </div>
                             <div class="form-group">
-                                <label >Added On</label>
+                                <label >Ditambah Pada</label>
                                 <input type="date" class="form-control" name="added_on" required="">
                             </div>
                             <div class="form-group">
-                                <label>Select Coupon Type</label>
+                                <label>Pilih Tipe Kupon</label>
                                 <div class="radio">
-                                    <input type="radio" name="coupon_type" value="1">Percentage
-                                    <input type="radio" name="coupon_type" value="0">Fixed
+                                    <input type="radio" name="coupon_type" value="1">Persentase
+                                    <input type="radio" name="coupon_type" value="0">Tetap
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label>Status</label>
                                 <div class="radio">
-                                    <input type="radio" name="coupon_status" value="1">Active
-                                    <input type="radio" name="coupon_status" value="0">Inactive
+                                    <input type="radio" name="coupon_status" value="1">Aktif
+                                    <input type="radio" name="coupon_status" value="0">Tidak Aktif
                                 </div>
                             </div>
-                            <button type="submit" name="btn" class="btn btn-outline-primary btn-block">Coupon Code Save</button>
+                            <button type="submit" name="btn" class="btn btn-outline-primary btn-block">Simpan Kode Kupon</button>
                         </form>
 
                     </div>

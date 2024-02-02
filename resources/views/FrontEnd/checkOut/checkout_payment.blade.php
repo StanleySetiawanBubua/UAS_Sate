@@ -20,11 +20,11 @@
 
                 <div class="card">
                     <div class="card-header text-muted">
-                        <h3 class="text-center">We've to know which payment method you want.....</h3>
+                        <h3 class="text-center">Masukkan Metode Pembayaran Anda</h3>
                             <strong class="text-center">{{ Session::get('sms') }}</strong>
                     </div>
                     <div class="card mt-4">
-                        <h5 class=" card-header text-center text-muted" style="margin-top: 10px">Please select your payment method</h5>
+                        <h5 class=" card-header text-center text-muted" style="margin-top: 10px">Silahkan Pilih</h5>
                         <div class="card-body">
                             <div class="checkout-left">
                                 <div class="address_form_agile mt-sm-5 mt-4">
@@ -33,16 +33,16 @@
                                         @csrf
                                         <table class="table table-bordered">
                                             <tr>
-                                                <th>Cash On Delivery</th>
-                                                <td><input type="radio" name="payment_type" value="Cash On"> Cash On</td>
+                                                <th>Bayar di Tempat</th>
+                                                <td><input type="radio" name="payment_type" value="Cash On"> Bayar di Tempat</td>
                                             </tr>
                                             <tr>
-                                                <th>Stripe Card</th>
-                                                <td><input type="radio" class="mr-5" name="payment_type" value="Stripe"> Stripe</td>
+                                                <th>Kartu ATM</th>
+                                                <td><input type="radio" class="mr-5" name="payment_type" value="Stripe"> ATM<</td>
                                             </tr>
                                             <tr>
                                                 <th></th>
-                                                <td><input type="submit" name="btn" class="btn btn-success" value="Confirm Order"></td>
+                                                <td><input type="submit" name="btn" class="btn btn-success" value="Konfirmasi Pesanan"></td>
                                             </tr>
                                         </table>
                                     </form>

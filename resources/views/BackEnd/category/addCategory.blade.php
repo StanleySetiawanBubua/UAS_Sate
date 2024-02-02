@@ -1,7 +1,7 @@
 @extends('BackEnd.master')
 @section('title')
 
-    Category Page
+    Tambah Kategori
 @endsection
 @section('content')
     <div class="container">
@@ -19,34 +19,34 @@
 
                 <div class="card">
                     <div class="card-header text-center">
-                        Category
+                        Kategori
                     </div>
                     <div class="card-body">
 
                         <form action="{{ route('cate_save') }}" method="post">
                             @csrf
                             <div class="form-group">
-                                <label>Category Name</label>
+                                <label>Nama Kategori</label>
                                 <input type="text" class="form-control"  name="category_name" required="">
                             </div>
                             <div class="form-group">
-                                <label >Description</label>
+                                <label >Deskripsi</label>
                                 <textarea type="text" class="form-control" name="description" rows="5" required=""></textarea>
 
                             </div>
                             <div class="form-group">
-                                <label >Added On</label>
+                                <label >Ditambah Pada</label>
                                 <input type="date" class="form-control" name="added_on" required="">
                             </div>
 
                             <div class="form-group">
-                                <label>Category Status</label>
+                                <label>Status Kategori</label>
                                 <div class="radio">
-                                    <input type="radio" name="category_status" value="1">Active
-                                    <input type="radio" name="category_status" value="0">Inactive
+                                    <input type="radio" name="category_status" value="1">Aktif
+                                    <input type="radio" name="category_status" value="0">Tidak Aktif
                                 </div>
                             </div>
-                            <button type="submit" name="btn" class="btn btn-outline-primary btn-block">Category Add</button>
+                            <button type="submit" name="btn" class="btn btn-outline-primary btn-block">Tambah Kategori</button>
 
                         </form>
 

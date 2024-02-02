@@ -1,7 +1,7 @@
 @extends('FrontEnd.master')
 
 @section('title')
-    Order | Complete
+    Pesanan | Selesai
 @endsection
 
 @section('content')
@@ -21,10 +21,10 @@
                     {{-- // For show flash message --}}
 
                     <div class="card-body">
-                        <h2 class="text-capitalize">Thanks for Your order.</h2>
-                        <p>We will contact you as soon as possible....</p>
+                        <h2 class="text-capitalize">Terimakasih untuk pesanan Anda</h2>
+                        <p>Kami Akan Menghubungi Anda Sesegera Mungkin</p>
                         <a href="{{ url('/') }}" class="btn btn-info">
-                            Continue Shopping
+                            Lanjut Berbelanja
                         </a>
                     </div>
                 </div>

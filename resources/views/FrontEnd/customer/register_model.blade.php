@@ -8,9 +8,9 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                     <h4 class="modal-header text-center">
-                        Welcome To Food Catering Service.
+                        Selamat Datang di Sate Nusantara
                         <strong class="text-center">
-                            Sign Up to make your account.
+                            Sign Up untuk membuat akun Anda
                         </strong>
                     </h4>
                 </div>
@@ -20,15 +20,15 @@
                         <div class="login-agileinfo">
                             <form action="{{ route('store_customer') }}" method="post">
                                 @csrf
-                                <input class="agile-ltext" type="text" name="name" placeholder="Enter your good name" required="">
-                                <input class="agile-ltext" type="email" name="email" placeholder="Your email is..." required="">
-                                <input class="agile-ltext" type="text" name="phone_no" placeholder="Your phone number is..." required="">
+                                <input class="agile-ltext" type="text" name="name" placeholder="Masukkan Nama Anda" required="">
+                                <input class="agile-ltext" type="email" name="email" placeholder="Masukkan Email Anda" required="">
+                                <input class="agile-ltext" type="text" name="phone_no" placeholder="Masukkan Nomor Telepon Anda" required="">
                                 <input class="agile-ltext" type="password" name="password" placeholder="Password" required="">
                                 <div class="wthreelogin-text">
                                     <ul>
                                         <li>
                                             <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>
-                                                <span> I agree to the terms of service</span>
+                                                <span> Saya setuju dengan syarat dan ketentuan layanan</span>
                                             </label>
                                         </li>
                                     </ul>

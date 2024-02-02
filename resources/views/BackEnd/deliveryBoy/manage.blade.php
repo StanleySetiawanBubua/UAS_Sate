@@ -1,6 +1,6 @@
 @extends('BackEnd.master')
 @section('title')
-    Delivery Boy Manage
+    Atur Kurir Antar
 @endsection
 @section('content')
 
@@ -19,7 +19,7 @@
     <div class="card my-5">
 
         <div class="card-header">
-            <h5 class="fw-bold text-center">Manage Delivery Boy</h5><br>
+            <h5 class="fw-bold text-center">Atur Kurir Antar</h5><br>
         </div>
 
         <!-- /.card-header -->
@@ -28,12 +28,12 @@
                 <thead>
 
                 <tr>
-                    <th>SL</th>
-                    <th>Name</th>
-                    <th>Phone Number</th>
-                    <th>Address</th>
-                    <th>Added On</th>
-                    <th>Action</th>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>No Telepon</th>
+                    <th>Alamat</th>
+                    <th>Ditambah Pada</th>
+                    <th>Tujuan</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -86,7 +86,7 @@
 
                                 <div class="modal-header">
 
-                                    <h5 class="modal-title">Update Delivery Boy</h5>
+                                    <h5 class="modal-title">Update Kurir Antar</h5>
 
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 
@@ -97,17 +97,17 @@
                                     <form action="{{ route('delivery_boy_update') }}" method="post">
                                         @csrf
                                         <div class="form-group">
-                                            <label> Name</label>
+                                            <label> Nama</label>
                                             <input type="text" class="form-control" name="delivery_boy_name" value="{{ $boy->delivery_boy_name }}">
                                             <input type="hidden" class="form-control" name="delivery_boy_id" value="{{ $boy->delivery_boy_id }}">
                                         </div>
                                         <div class="form-group">
-                                            <label>Phone number</label>
+                                            <label>No Telepon</label>
                                             <input type="text" class="form-control" name="delivery_boy_phone_number" value="{{ $boy->delivery_boy_phone_number }}">
                                         </div>
 
                                          <div class="form-group">
-                                            <label>Address</label>
+                                            <label>Alamat</label>
                                             <input type="text" class="form-control" name="delivery_boy_address" value="{{ $boy->delivery_boy_address }}">
                                         </div>
 

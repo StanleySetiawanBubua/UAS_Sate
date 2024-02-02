@@ -54,7 +54,7 @@
         <div class="offset-xl-2 col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 padding">
             <div class="card">
                 <div class="card-header p-4">
-                    <a class="pt-2 d-inline-block" href="{{ url('/') }}" data-abc="true">O F C S M S</a>
+                    <a class="pt-2 d-inline-block" href="{{ url('/') }}" data-abc="true">Sate Nusantara</a>
                     <div class="float-right">
                         <h3 class="mb-0">Invoice #{{ $order->order_id }}</h3>
                         Date: {{ $order->created_at }}
@@ -63,15 +63,15 @@
                 <div class="card-body">
                     <div class="row mb-4">
                         <div class="col-sm-6">
-                            <h5 class="mb-3">From:</h5>
-                            <h3 class="text-dark mb-1">O F C S M S</h3>
-                            <div>22, West Datta Para </div>
-                            <div>Nishat Nagar, Tongi, Gazipur 1712</div>
-                            <div>Email: ofcsms@gmail.com</div>
-                            <div>Phone: +88 015 2132 8545</div>
+                            <h5 class="mb-3">Dari:</h5>
+                            <h3 class="text-dark mb-1">Sate Nusantara</h3>
+                            <div>22, Bandung </div>
+                            <div>Stanley, 40534</div>
+                            <div>Email: SateNusantara@gmail.com</div>
+                            <div>Nomor Telepon: +086579373628</div>
                         </div>
                         <div class="col-sm-6 ">
-                            <h5 class="mb-3">To:</h5>
+                            <h5 class="mb-3">Kepada:</h5>
                             <h3 class="text-dark mb-1"> {{ $shipping->name }}</h3>
                             <div>{{ $shipping->address }}</div>
                             <div>{{ $shipping->email }}</div>
@@ -108,7 +108,7 @@
 
                 </div>
                 <div class="card-footer bg-white">
-                    <p class="mb-0">O F C S M S, 22, West Datta Para, Nishat Nagar, Tongi, Gazipur 1712</p>
+                    <p class="mb-0">Sate Nusantara</p>
                 </div>
             </div>
         </div>

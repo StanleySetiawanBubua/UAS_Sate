@@ -2,35 +2,33 @@
     <div class="card-body">
         <table class="table-borderless">
             <tr>
-                <td>Dear <strong>{{ $name }}</strong></td>
+                <td>Kepada <strong>{{ $name }}</strong></td>
             </tr>
             <tr>
-                <td>Your Order Id: <strong>{{ $order_id.''.'-'.''.rand(111,999) }}</strong></td>
+                <td>Id Pesananmu: <strong>{{ $order_id.''.'-'.''.rand(111,999) }}</strong></td>
             </tr>
             <tr>
-                <td>Order Total Amount: <strong>{{ $total ?? '' }}tk</strong></td>
+                <td>Total Harga: <strong>{{ $total ?? '' }}Ribu</strong></td>
             </tr>
             <tr>
-                <td>Your Phone Number: <strong>{{ $number ?? '' }}</strong></td>
+                <td>Nomor HP: <strong>{{ $number ?? '' }}</strong></td>
             </tr>
             <tr>
-                <td>Your Shipping Address: <strong>{{ $address ?? '' }}</strong></td>
+                <td>Alamat Pengiriman: <strong>{{ $address ?? '' }}</strong></td>
             </tr>
             <tr>
-                <td>Thanks for your order </td>
+                <td>Terimakasih Sudah Memesan </td>
             </tr>
             <tr>
-                <td>Stay Connected us</td>
+                <td>Tetap terhubung dengan kami</td>
             </tr>
-            <tr><td>Visit this link to shop more:<a href="{{ url('/') }}">Click to more</a></td></tr>
+            <tr><td>Klik link ini untuk memesan lebih lanjut:<a href="{{ url('/') }}">Click to more</a></td></tr>
             <tr>
-                <td>Regards,</td>
+                <td>Salam,</td>
             </tr>
             <tr>
-                <td>O F C S M S Team</td>
+                <td>Sate Nusantara</td>
             </tr>
         </table>
-
     </div>
 </div>
-

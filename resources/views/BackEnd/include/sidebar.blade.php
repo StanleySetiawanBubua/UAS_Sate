@@ -9,20 +9,26 @@ $route = Route::current()->getName();
     <a href="{{ asset('/home') }}" class="brand-link">
         <img src="{{ asset('/BackEndSourceFile') }}/dist/img/food-logo-templates-cover.png" alt="AdminLTE Logo" class="brand-image img-rectangle elevation-3"
              style="opacity: .8">
-        <span class="brand-text font-weight-light">O F C S M S</span>
+        <span class="brand-text font-weight-light">Sate Nusantara</span>
     </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-            <div class="image">
-                <img src="{{ asset('/BackEndSourceFile') }}/dist/img/Md_Abir_Hasan(300x300).jpg" class="img-circle elevation-2" alt="User Image">
-            </div>
-            <div class="info">
-                <a href="#" class="d-block">{{ Auth::user()->name }}</a>
-            </div>
-        </div>
+    <div class="image">
+        <img src="{{ asset('/BackEndSourceFile') }}/dist/img/Stanley.png" class="img-circle elevation-2" alt="User Image">
+    </div>
+    <div class="info">
+        @auth
+            <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+        @endauth
+        @guest
+            <a href="#" class="d-block">Guest</a>
+        @endguest
+    </div>
+</div>
+
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
@@ -34,7 +40,7 @@ $route = Route::current()->getName();
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Category
+                            Kategori
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -42,13 +48,13 @@ $route = Route::current()->getName();
                         <li class="nav-item">
                             <a href="{{ route('show_cate_table') }}" class="nav-link {{ ($route=='show_cate_table')?'active':'' }}">
                                 <i class="fa fa-plus-circle nav-icon"></i>
-                                <p>Add Category</p>
+                                <p>Tambah Kategori</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('manage_cate') }}" class="nav-link {{ ($route=='manage_cate')?'active':'' }} ">
                                 <i class="fa fa-edit nav-icon"></i>
-                                <p>Manage Category</p>
+                                <p>Atur</p>
                             </a>
                         </li>
                     </ul>
@@ -60,7 +66,7 @@ $route = Route::current()->getName();
                     <a href="#" class="nav-link">
                         <i class="nav-icon fa fa-truck"></i>
                         <p>
-                            Delivery Boy
+                            Kurir Antar
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -68,13 +74,13 @@ $route = Route::current()->getName();
                         <li class="nav-item">
                             <a href="{{ route('show_boy_table') }}" class="nav-link {{ ($route=='show_boy_table')?'active':'' }}">
                                 <i class="fa fa-plus-circle nav-icon"></i>
-                                <p>Add Delivery Boy</p>
+                                <p>Tambah Kurir Antar</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('manage_delivery_boy') }}" class="nav-link {{ ($route=='manage_delivery_boy')?'active':'' }}">
                                 <i class="fa fa-edit nav-icon"></i>
-                                <p>Manage Delivery Boy</p>
+                                <p>Atur Kurir Antar</p>
                             </a>
                         </li>
                     </ul>
@@ -86,7 +92,7 @@ $route = Route::current()->getName();
                     <a href="#" class="nav-link">
                         <i class="nav-icon fa fa-ticket-alt"></i>
                         <p>
-                            Coupon
+                            Kupon
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -94,13 +100,13 @@ $route = Route::current()->getName();
                         <li class="nav-item">
                             <a href="{{ route('show_coupon_table') }}" class="nav-link {{ ($route=='show_coupon_table')?'active':'' }}">
                                 <i class="fa fa-plus-circle nav-icon"></i>
-                                <p>Add Coupon</p>
+                                <p>Tambah Kupon</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('manage_coupon_table') }}" class="nav-link {{ ($route=='manage_coupon_table')?'active':'' }}">
                                 <i class="fa fa-edit nav-icon"></i>
-                                <p>Manage Coupon</p>
+                                <p>Atur Kupon</p>
                             </a>
                         </li>
                     </ul>
@@ -112,7 +118,7 @@ $route = Route::current()->getName();
                     <a href="#" class="nav-link ">
                         <i class="nav-icon fas fa-hamburger" aria-hidden="true"></i>
                         <p>
-                            Dish
+                            Hidangan
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -120,13 +126,13 @@ $route = Route::current()->getName();
                         <li class="nav-item">
                             <a href="{{ route('show_dish_table') }}" class="nav-link {{ ($route=='show_dish_table')?'active':'' }}">
                                 <i class="fa fa-plus-circle nav-icon"></i>
-                                <p>Add Dish</p>
+                                <p>Tambah Hidangan</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ route('manage_dish_table') }}" class="nav-link {{ ($route=='manage_dish_table')?'active':'' }}">
                                 <i class="fa fa-edit nav-icon"></i>
-                                <p>Manage Dish</p>
+                                <p>Atur Hidangan</p>
                             </a>
                         </li>
                     </ul>
@@ -139,7 +145,7 @@ $route = Route::current()->getName();
                     <a href="#" class="nav-link ">
                         <i class="nav-icon fas fa-utensils" aria-hidden="true"></i>
                         <p>
-                            Order
+                            Pesanan
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -147,7 +153,7 @@ $route = Route::current()->getName();
                         <li class="nav-item">
                             <a href="{{ route('show_order') }}" class="nav-link {{ ($route=='show_order')?'active':'' }}">
                                 <i class="fa fa-plus-circle nav-icon"></i>
-                                <p>Manage Order</p>
+                                <p>Atur Pesanan</p>
                             </a>
                         </li>
                     </ul>

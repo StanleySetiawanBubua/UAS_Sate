@@ -1,6 +1,6 @@
 @extends('BackEnd.master')
 @section('title')
-    Manage Coupon Code
+    Atur Kupon
 @endsection
 @section('content')
 
@@ -19,7 +19,7 @@
     <div class="card my-5">
 
         <div class="card-header">
-            <h5 class="fw-bold text-center">Manage Coupon</h5><br>
+            <h5 class="fw-bold text-center">Atur Kupon</h5><br>
         </div>
 
         <!-- /.card-header -->
@@ -28,14 +28,14 @@
                 <thead>
 
                 <tr>
-                    <th>SL</th>
-                    <th>Code</th>
-                    <th>Type</th>
-                    <th>Value</th>
-                    <th>Cart Min</th>
-                    <th>Expired On</th>
-                    <th>Added On</th>
-                    <th>Action</th>
+                    <th>No</th>
+                    <th>Kode</th>
+                    <th>Tipe</th>
+                    <th>Nilai</th>
+                    <th>Minimum Beli</th>
+                    <th>Kadaluwarsa</th>
+                    <th>Ditambah Pada</th>
+                    <th>Tindakan</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -98,7 +98,7 @@
 
                                 <div class="modal-header">
 
-                                    <h5 class="modal-title">Update Coupon Code</h5>
+                                    <h5 class="modal-title">Update Kode Kupon</h5>
 
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 
@@ -109,38 +109,38 @@
                                     <form action="{{ route('update_coupon_code') }}" method="post">
                                         @csrf
                                         <div class="form-group">
-                                            <label> Name</label>
+                                            <label>Nama</label>
                                             <input type="text" class="form-control" name="coupon_code" value="{{ $code->coupon_code }}">
                                             <input type="hidden" class="form-control" name="coupon_id" value="{{ $code->coupon_id }}">
                                         </div>
                                         <div class="form-group">
-                                            <label>Coupon Value</label>
+                                            <label>Nilai Kupon</label>
                                             <input type="text" class="form-control" name="coupon_value" value="{{ $code->coupon_value }}">
                                         </div>
                                         <div class="form-group">
-                                            <label>Cart Min Value</label>
+                                            <label>Minimum Pembelian</label>
                                             <input type="text" class="form-control" name="cart_min_value" value="{{ $code->cart_min_value }}">
                                         </div>
                                        {{-- <div class="form-group">
-                                            <label>Coupon Type</label>
+                                            <label>Tipe Kupon</label>
                                             <div class="radio">
                                                 @if($code->coupon_type == 1)
 
-                                                    <input type="checkbox" name="coupon_type" value="1">Percentage
+                                                    <input type="checkbox" name="coupon_type" value="1">Persentase
                                                 @else
 
-                                                    <input type="checkbox" name="coupon_type" value="0">Fixed
+                                                    <input type="checkbox" name="coupon_type" value="0">Tetap
                                                 @endif
 
 
                                             </div>
                                         </div>--}}
                                         <div class="form-group">
-                                            <label>Select Coupon Type</label>
+                                            <label>Pilih Tipe Kupon</label>
                                             <div class="radio">
-                                                <input type="radio" name="coupon_type"  value="1">Percentage
+                                                <input type="radio" name="coupon_type"  value="1">Persentase
                                             </div>
-                                            <input type="radio" name="coupon_type" value="0">Fixed
+                                            <input type="radio" name="coupon_type" value="0">Kupon
                                         </div>
 
                                         <div class="form-group">

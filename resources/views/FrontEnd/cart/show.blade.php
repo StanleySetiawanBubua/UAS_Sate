@@ -1,7 +1,7 @@
 @extends('FrontEnd.master')
 
 @section('title')
-    Cart Show item
+    Menu di Keranjang
 @endsection
 
 @section('content')
@@ -24,12 +24,12 @@
                     <form action="{{ route('coupon_apply') }}" method="post">
                         @csrf
                         <div class="card">
-                            <h3 class="card-header" style="margin: 5px 0 ">Have Coupon</h3>
+                            <h3 class="card-header" style="margin: 5px 0 ">Sudah Punya Kupon?</h3>
                             <div class="card-body">
                                 <input type="text" name="coupon_code" class="form-control">
                             </div>
                             <div class="card-footer">
-                                <input type="submit" class="btn btn-success" style="margin: 10px 0" value="Poo">
+                                <input type="submit" class="btn btn-success" style="margin: 10px 0" value="Gunakan">
                             </div>
                         </div>
                     </form>
@@ -42,24 +42,24 @@
 
 <div class="row">
     <div class=" col-md-4 card text-white bg-danger mb-3" style="max-width: 18rem; margin:50px; margin-top:0px">
-  <div class="card-header">Use This Code For(100-500)TK</div>
+  <div class="card-header">Gunakan Kode Ini</div>
   <div class="card-body">
-    <h1 class="card-title">c12345</h1>
-    <p class="card-text">You Can get 10% Off for this Coupon. So hurry up for order!!!</p>
+    <h1 class="card-title">SN0123</h1>
+    <p class="card-text">Untuk Potongan Harga 5%</p>
   </div>
 </div>
 <div class="col-md-4  card text-white bg-secondary mb-3" style="max-width: 18rem; margin:50px; margin-top:0px">
-  <div class="card-header">Use This Code For(500-1000)TK</div>
+  <div class="card-header">Gunakan Kode Ini</div>
   <div class="card-body">
-    <h1 class="card-title">a2345</h1>
-    <p class="card-text">You Can get 20% Off for this Coupon. So hurry up for order!!!</p>
+    <h1 class="card-title">SN987</h1>
+    <p class="card-text">Untuk Potongan Harga 15%</p>
   </div>
 </div>
 <div class="col-md-4  card text-white bg-success mb-3" style="max-width: 18rem; ">
-  <div class="card-header">Use This Code For(1000-2000)TK</div>
+  <div class="card-header">Gunakan Kode Ini</div>
   <div class="card-body">
-    <h1 class="card-title">b12345</h1>
-    <p class="card-text">You Can get 30% Off for this Coupon. So hurry up for order!!!</p>
+    <h1 class="card-title">SN567</h1>
+    <p class="card-text">Untuk Potongan Harga 25%</p>
   </div>
 </div>
 </div>
@@ -71,28 +71,28 @@
 
                 <div class="card">
                     <h3 class="card-header text-center" style="background-color: lightyellow; height: 70px;width: auto">
-                        Cart Items
+                        Menu di Keranjang
                     </h3>
                     <div class="card-body">
 
                         <table class="table table-hover table-bordered table-responsive">
                             <thead>
                             <tr>
-                                <th scope="col">SL</th>
-                                <th scope="col">Remove</th>
-                                <th scope="col">Dish Name</th>
-                                <th scope="col">Dish Image</th>
-                                <th scope="col">Dish Price</th>
-                                <th scope="col">Quantity</th>
+                                <th scope="col">No</th>
+                                <th scope="col">Hapus</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Gambar</th>
+                                <th scope="col">Harga</th>
+                                <th scope="col">Jumlah</th>
                                 @if(Session::has('coupon'))
-                                    <th scope="col">Coupon</th>
-                                    <th scope="col">Discount</th>
+                                    <th scope="col">Kupon</th>
+                                    <th scope="col">Diskon</th>
                                 @else
 
                                 @endif
-                                <th scope="col">Total Price</th>
+                                <th scope="col">Harga</th>
 
-                                <th scope="col">Grand Total Price</th>
+                                <th scope="col">Total Harga</th>
                             </tr>
 
                             </thead>
@@ -110,7 +110,7 @@
 
                                 <td>{{ $dish->name }}</td>
                                 <td><img src="{{ asset($dish->options->image) }}" style="width: 50px; height: 50px; border-radius: 50%"></td>
-                                <td>{{ $dish->price }} TK</td>
+                                <td>{{ $dish->price }} Ribu</td>
 
                                 @if(Session::has('coupon'))
                                     <td>
@@ -130,8 +130,8 @@
                                     </td>
 
                                     <td>
-                                        {{ $subTotal= $dish->price*$dish->qty }} TK
-                                        ( - {{$discount = $subTotal * session()->get('coupon')['coupon_value'] / 100 }}tk)
+                                        {{ $subTotal= $dish->price*$dish->qty }} Ribu
+                                        ( - {{$discount = $subTotal * session()->get('coupon')['coupon_value'] / 100 }Ribu)
                                     </td>
 
                                     <?php
@@ -148,7 +148,7 @@
                                         </form>
                                     </td>
 
-                                    <td class="form-inline">{{ $subTotal= $dish->price*$dish->qty }} TK</td>
+                                    <td class="form-inline">{{ $subTotal= $dish->price*$dish->qty }} Ribu</td>
 
                                     <td>{{ $dish->subTotal }}</td>
 
@@ -171,12 +171,12 @@
                                 @if(Session::has('coupon'))
                                     <td></td>
                                     <td></td>
-                                    <td class="text-center"> =  {{ $grant = $sum-$discount }} tk </td>
+                                    <td class="text-center"> =  {{ $grant = $sum-$discount }} Ribu </td>
                                     <?php
                                         Session::put('sum', $grant);
                                     ?>
                                 @else
-                                    <td class="text-center"> =  {{ $grant = $sum }} tk </td>
+                                    <td class="text-center"> =  {{ $grant = $sum }} Ribu </td>
 
                                     <?php
                                         Session::put('sum', $grant);
@@ -194,7 +194,7 @@
                 <div class="col-md-9 product-w3ls-left">
                     <a href="{{ url('/') }}" class="btn btn-primary" style="float: left">
                         <i class="fa fa-arrow-left"></i>
-                        Order More<br/>
+                        Pesan Lagi<br/>
                     </a>
                 </div>
 
@@ -202,14 +202,14 @@
                 <div class="col-md-9 product-w3ls-right">
                     <a href="{{ url('/checkout/payment') }}" class="btn btn-info" style="float: right">
                         <i class="fa fa-shopping-bag"></i>
-                        Checkout
+                        Bayar
                     </a>
                 </div>
             @elseif(Session::get('customer_id'))
                 <div class="col-md-9 product-w3ls-right">
                     <a href="{{ url('/shipping') }}" class="btn btn-info" style="float: right">
                         <i class="fa fa-shopping-bag"></i>
-                        Checkout
+                        Bayar
                     </a>
                 </div>
             @else
@@ -217,7 +217,7 @@
             <div class="col-md-9 product-w3ls-right" title="Please Login First To Continue Your Process">
                 <a href="" data-toggle="modal" data-target="#login_or_register" class="btn btn-info" style="float: right">
                     <i class="fa fa-shopping-bag"></i>
-                    Checkout
+                    Bayar
                 </a>
             </div>
 
@@ -242,7 +242,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h3>
-                                    Welcome..! To Food Catering Service
+                                    Selamat Datang! Di Sate Nusantara
                                 </h3>
                                 <div class="text-center" style="
                                                                 margin-top:25px;
@@ -253,7 +253,7 @@
                                                                 color: ghostwhite;
                                                                 padding-top: 65px;
                                                                 font-size: 20px">
-                                    Keep your smile...
+                                    Diri Anda
                                 </div>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                     <div class="col-md-6">
                         <div class="card">
                             <div class="card-body">
-                                <h4>Are you a new member...! </h4>
+                                <h4>Apa Anda Anggota Baru? </h4>
                                 <a href="#sigup-modal" data-toggle="modal" class="btn-block btn-primary text-center"
                                    style="
                                             height: 60px;
@@ -274,9 +274,9 @@
                                     <span class="mt-5">Register</span>
                                 </a>
 
-                                <h3 class="mt-lg-5 text-center">Or</h3>
+                                <h3 class="mt-lg-5 text-center">Atau</h3>
 
-                                <h4 class="mt-5">Already have an account... </h4>
+                                <h4 class="mt-5">Sudah Punya Akun? </h4>
 
                                 <a href="#signin-modal" data-toggle="modal" class="btn-block btn-success text-center"
                                    style="

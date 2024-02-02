@@ -1,6 +1,6 @@
 @extends('FrontEnd.master')
 @section('title')
-    Home
+    Beranda
 @endsection
 @section('content')
     <div class="add-products">
@@ -8,16 +8,16 @@
             <div class="add-products-row">
                 <div class="w3ls-add-grids">
                     <a href="menu.html">
-                        <h4>Get <span>20%<br>Cashback</span></h4>
-                        <h5>Ordered in mobile app only </h5>
-                        <h6>Order Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
+                        <h4>Dapatkan <span>20%<br>Uang Kembali</span></h4>
+                        <h5>Hanya di Aplikasi Mobile </h5>
+                        <h6>Pesan Sekarang <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
                     </a>
                 </div>
                 <div class="w3ls-add-grids w3ls-add-grids-right">
                     <a href="menu.html">
-                        <h4>GET Upto<span><br>40% Offer</span></h4>
-                        <h5>Sunday special discount</h5>
-                        <h6>Order Now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
+                        <h4>DAPATKAN Hingga<span><br>40% Penawaran</span></h4>
+                        <h5>Diskon Spesial Hari Jumat</h5>
+                        <h6>Pesan Sekarang <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
                     </a>
                 </div>
                 <div class="clearfix"> </div>
@@ -29,34 +29,34 @@
     <div class="wthree-order">
         <img src="{{ asset('/') }}frontEndSourceFile/images/i2.jpg" class="w3order-img" alt=""/>
         <div class="container">
-            <h3 class="w3ls-title">How To Order Online Food</h3>
-            <p class="w3lsorder-text">Get your favourite food in 4 simple steps.</p>
+            <h3 class="w3ls-title">Bagaimana Memesan Makanan Online</h3>
+            <p class="w3lsorder-text">Dapatkan Makanan dengan 4 Langkah Sederhana</p>
             <div class="order-agileinfo">
                 <div class="col-md-3 col-sm-3 col-xs-6 order-w3lsgrids">
                     <div class="order-w3text">
                         <i class="fa fa-map" aria-hidden="true"></i>
-                        <h5>Choose Food</h5>
+                        <h5>Pilih Makanan</h5>
                         <span>1</span>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6 order-w3lsgrids">
                     <div class="order-w3text">
                         <i class="fa fa-cutlery" aria-hidden="true"></i>
-                        <h5>Give Address</h5>
+                        <h5>Masukkan Alamat</h5>
                         <span>2</span>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6 order-w3lsgrids">
                     <div class="order-w3text">
                         <i class="fa fa-credit-card" aria-hidden="true"></i>
-                        <h5>Pay Money</h5>
+                        <h5>Bayar</h5>
                         <span>3</span>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6 order-w3lsgrids">
                     <div class="order-w3text">
                         <i class="fa fa-truck" aria-hidden="true"></i>
-                        <h5>Enjoy Food</h5>
+                        <h5>Nikmati Makanan</h5>
                         <span>4</span>
                     </div>
                 </div>
@@ -68,11 +68,11 @@
     <!-- dishes -->
     <div class="w3agile-spldishes">
         <div class="container">
-            <h3 class="w3ls-title">Special Foods</h3>
+            <h3 class="w3ls-title">Hidangan Spesial</h3>
             <div class="spldishes-agileinfo">
                 <div class="col-md-3 spldishes-w3left">
-                    <h5 class="w3ltitle">O F C S M S Specials</h5>
-                    <p> Teste Various Types of Delicious Home Made Dishes in One Place !!! </p>
+                    <h5 class="w3ltitle">Hidangan Spesial Sate Nusantara</h5>
+                    <p> Segera kunjungi kami dan rasakan kelezatan sate autentik dengan harga istimewa </p>
                 </div>
 
                 <div class="col-md-9 spldishes-grids">
@@ -102,15 +102,15 @@
     <!-- deals -->
     <div class="w3agile-deals">
         <div class="container">
-            <h3 class="w3ls-title">Special Services</h3>
+            <h3 class="w3ls-title">Layanan Istimewa</h3>
             <div class="dealsrow">
                 <div class="col-md-6 col-sm-6 deals-grids">
                     <div class="deals-left">
                         <i class="fa fa-truck" aria-hidden="true"></i>
                     </div>
                     <div class="deals-right">
-                        <h4>FREE DELIVERY</h4>
-                        <p>In Uttara Up to 2KM  </p>
+                        <h4>Gratis Kirim</h4>
+                        <p>Jl. Ayam Wuruk KM.3  </p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -119,8 +119,8 @@
                         <i class="fa fa-birthday-cake" aria-hidden="true"></i>
                     </div>
                     <div class="deals-right">
-                        <h4>Party Orders</h4>
-                        <p>We Take All Type Party Booking Orders !!!</p>
+                        <h4>Pesanan Perayaan</h4>
+                        <p>Kami Menerima Semua Jenis Pesanan untuk Pesta</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -129,8 +129,8 @@
                         <i class="fa fa-users" aria-hidden="true"></i>
                     </div>
                     <div class="deals-right">
-                        <h4>Event Reservation</h4>
-                        <p>We Take All Type Party Booking Orders !!!</p>
+                        <h4>Pemesanan Acara</h4>
+                        <p>Kami Menerima Semua Jenis Pesanan untuk Pesta</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>
@@ -139,8 +139,8 @@
                         <i class="fa fa-building" aria-hidden="true"></i>
                     </div>
                     <div class="deals-right">
-                        <h4>corporate orders</h4>
-                        <p> We Take All Type Party Booking Orders !!!</p>
+                        <h4>Pemesanan Perusahaan</h4>
+                        <p> Kami Menerima Semua Jenis Pesanan untuk Pesta!</p>
                     </div>
                     <div class="clearfix"> </div>
                 </div>

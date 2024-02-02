@@ -1,7 +1,7 @@
 @extends('FrontEnd.master')
 
 @section('title')
-    Help Information
+    Bantuan
 @endsection
 
 @section('content')
@@ -11,49 +11,41 @@
 <!-- breadcrumb -->
 	<div class="container">
 		<ol class="breadcrumb w3l-crumbs">
-			<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-			<li class="active">Help</li>
+			<li><a href="#"><i class="fa fa-home"></i> Beranda</a></li>
+			<li class="active">Bantuan</li>
 		</ol>
 	</div>
 	<!-- //breadcrumb -->
 	<!-- help-page -->
 	<div class="help about">
 		<div class="container">
-			<h3 class="w3ls-title w3ls-title1">How can we help you ???</h3>
+			<h3 class="w3ls-title w3ls-title1">Ada Yang Bisa Kami Bantu?</h3>
 			<div class="faq-w3agile">
-				<h5>Top 05 Frequently asked questions(FAQ)</h5>
+				<h5>Top 5 Pertanyaan yang Sering Diajukan (FAQ)</h5>
 				<ul class="faq">
-					<li class="item1"><a href="#" title="click here">Whats the order procedure?</a>
+					<li class="item1"><a href="#" title="click here">Apa menu spesial yang ditawarkan oleh Sate Nusantara?</a>
 						<ul>
-							<li class="subitem1"><p>You can easily Order through our Website<br>
-                            You need to follow the following steps:<br>
-                            1. You need to register first <br>
-                            2. If you are already registered person then you need to select food in the dish list <br>
-                            3. Then Add To Cart || or You can keep it in wishlist <br>
-                            4. Shipping Information <br>
-                            5. Payment Information <br>
-                            6. Done!!! Thats it! <br>
-                        </p></li>
+							<li class="subitem1"><p>Kami memiliki berbagai pilihan sate spesial, termasuk sate ayam, sate kambing, dan sate sapi. Juga, jangan lewatkan sate padang dan sate lilit khas Bali kami!</p></li>
 						</ul>
 					</li>
-					<li class="item2"><a href="#" title="click here">What is the order delivery time?</a>
+					<li class="item2"><a href="#" title="click here">Bagaimana cara memesan di Sate Nusantara?</a>
 						<ul>
-							<li class="subitem1"><p> We are currently work in the specific boundary for Covid-19 panademic. Now we take order Gazipur-27 to Airport. So you can expect the the food is in your hand upto 30 to 50 minutes !!!! </p></li>
+							<li class="subitem1"><p> Anda dapat memesan langsung di restoran kami, melalui telepon, atau menggunakan platform pemesanan online kami. Kunjungi situs web kami atau hubungi kami untuk detail lebih lanjut. </p></li>
 						</ul>
 					</li>
-					<li class="item3"><a href="#" title="click here">I can not get the confirmation mail. What can I do now?</a>
+					<li class="item3"><a href="#" title="click here">Apakah Sate Nusantara menerima pemesanan untuk acara khusus atau katering?</a>
 						<ul>
-							<li class="subitem1"><p>Due to Corona Panademic we get more order from previous. our helpline works almost 12 hours. So please be patience !!! you can get the mail as soon as possible! </p></li>
+							<li class="subitem1"><p> Ya, kami menyediakan layanan katering untuk berbagai acara, seperti pesta ulang tahun, acara pernikahan, dan rapat bisnis. Silakan hubungi kami untuk informasi lebih lanjut. </p></li>
 						</ul>
 					</li>
-					<li class="item4"><a href="#" title="click here">Is there any product return option or get refund policy?</a>
+					<li class="item4"><a href="#" title="click here">Apa kebijakan pengembalian atau penggantian di Sate Nusantara?</a>
 						<ul>
-							<li class="subitem1"><p>In this matter we are very serious!!! When we are 100% sure the food quality then the food will be in your hand!! So you can order our food without any hasitation!!!</p></li>
+							<li class="subitem1"><p>Kami memiliki kebijakan pengembalian uang penuh jika pesanan Anda tidak memenuhi harapan Anda atau terdapat masalah kualitas. Silakan hubungi kami dalam waktu 24 jam setelah penerimaan pesanan untuk proses pengembalian.</p></li>
 						</ul>
 					</li>
-					<li class="item5"><a href="#" title="click here">What is the area boundary to serve your food ?</a>
+					<li class="item5"><a href="#" title="click here">Apakah Sate Nusantara menyediakan opsi pengiriman atau layanan antar?</a>
 						<ul>
-							<li class="subitem1"><p>We are currently work in the specific boundary for Covid-19 panademic. Now we take order Gazipur-27 to Airport. So you can expect the the food is in your hand upto 30 to 50 minutes !!!!</p></li>
+							<li class="subitem1"><p>Ya, kami menyediakan layanan pengiriman dan antar. Anda dapat memesan melalui aplikasi pengiriman makanan atau menghubungi kami secara langsung untuk pengaturan pengiriman ke lokasi Anda.</p></li>
 						</ul>
 					</li>
 
@@ -84,11 +76,11 @@
 				<!-- script for tabs -->
 			</div>
 			<div class="help-search">
-				<h5>You can register yourself for listing and we will contact you:</h5>
+				<h5>Anda dapat mencantumkan diri dan kami akan menghubungi Anda:</h5>
 				<form action="#" method="post">
-					<input type="search" name="Search" placeholder="Please type your query eg.Return and email" required="">
+					<input type="search" name="Search" placeholder="Email" required="">
 					<button type="submit" class="btn btn-default" aria-label="Left Align">
-						Submit
+						Kirim
 					</button>
 				</form>
 			</div>

@@ -1,7 +1,7 @@
 @extends('BackEnd.master')
 @section('title')
 
-    Delivery Boy Add
+    Tambah Kurir Antar
 @endsection
 @section('content')
     <div class="container">
@@ -19,37 +19,37 @@
 
                 <div class="card">
                     <div class="card-header text-center">
-                        Delivery Boy
+                        Kurir Antar
                     </div>
                     <div class="card-body">
 
                         <form action="{{ route('save_delivery_boy') }}" method="post">
                             @csrf
                             <div class="form-group">
-                                <label>Name</label>
+                                <label>Nama</label>
                                 <input type="text" class="form-control"  name="delivery_boy_name" required="">
                             </div>
                             <div class="form-group">
-                                <label >Phone Number</label>
+                                <label >Nomor Telepon</label>
                                 <input type="text" class="form-control" name="delivery_boy_phone_number" required="">
                             </div>
                             <div class="form-group">
-                                <label>Address</label>
+                                <label>Alamat</label>
                                 <input type="text" class="form-control"  name="delivery_boy_address" required="">
                             </div>
                             <div class="form-group">
-                                <label >Added On</label>
+                                <label >Ditambah Pada</label>
                                 <input type="date" class="form-control" name="added_on">
                             </div>
 
                             <div class="form-group">
                                 <label>Status</label>
                                 <div class="radio">
-                                    <input type="radio" name="delivery_boy_status" value="1">Active
-                                    <input type="radio" name="delivery_boy_status" value="0">Inactive
+                                    <input type="radio" name="delivery_boy_status" value="1">Aktif
+                                    <input type="radio" name="delivery_boy_status" value="0">Tidak Aktif
                                 </div>
                             </div>
-                            <button type="submit" name="btn" class="btn btn-outline-primary btn-block">Delivery Boy Add</button>
+                            <button type="submit" name="btn" class="btn btn-outline-primary btn-block">Tambah Kurir Antar</button>
                         </form>
 
                     </div>

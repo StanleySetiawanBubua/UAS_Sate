@@ -1,7 +1,7 @@
 @extends('BackEnd.master')
 
 @section('title')
-    Order Manage
+    Atur Pesanan
 @endsection
 
 @section('content')
@@ -19,7 +19,7 @@
     <div class="card my-5">
 
         <div class="card-header">
-            <h5 class="fw-bold text-center">Manage Order</h5><br>
+            <h5 class="fw-bold text-center">Atur Pesanan</h5><br>
         </div>
 
         <!-- /.card-header -->
@@ -28,14 +28,14 @@
                 <thead>
 
                 <tr>
-                    <th>SL</th>
-                    <th>Customer Name</th>
-                    <th>Order Total</th>
-                    <th>Order Status</th>
-                    <th>Order Date</th>
-                    <th>Payment Type</th>
-                    <th>Payment Status</th>
-                    <th>Action</th>
+                    <th>No</th>
+                    <th>Nama Pelanggan</th>
+                    <th>Total Pesanan</th>
+                    <th>Status Pesanan</th>
+                    <th>Tanggal Pesanan</th>
+                    <th>Tipe Pembayaran</th>
+                    <th>Status Pembayaran</th>
+                    <th>Tindakan</th>
                 </tr>
 
                 </thead>

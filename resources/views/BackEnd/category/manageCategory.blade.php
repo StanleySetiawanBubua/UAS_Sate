@@ -1,6 +1,6 @@
 @extends('BackEnd.master')
 @section('title')
-    Category manage
+    Atur Kategori
 @endsection
 @section('content')
 
@@ -19,7 +19,7 @@
     <div class="card my-5">
 
         <div class="card-header">
-            <h5 class="fw-bold text-center">Manage Category</h5>
+            <h5 class="fw-bold text-center">Atur Kategori</h5>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -27,10 +27,10 @@
                 <thead>
 
                 <tr>
-                    <th>SL</th>
-                    <th>Category Name</th>
-                    <th>Description</th>
-                    <th>Action</th>
+                    <th>No</th>
+                    <th>Nama Kategori</th>
+                    <th>Deskripsi</th>
+                    <th>Tindakan</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -89,12 +89,12 @@
                                         <form action="{{ route('cate_update') }}" method="post">
                                             @csrf
                                             <div class="form-group">
-                                                <label>Category name</label>
+                                                <label>Nama Kategori</label>
                                                 <input type="text" class="form-control" name="category_name" value="{{ $cate->category_name }}">
                                                 <input type="hidden" class="form-control" name="category_id" value="{{ $cate->category_id }}">
                                             </div>
                                             <div class="form-group">
-                                                <label>Description</label>
+                                                <label>Deskripsi</label>
                                                 <textarea type="text" class="form-control" name="description">{{ $cate->description }}</textarea>
 
                                             </div>

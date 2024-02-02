@@ -1,7 +1,7 @@
 @extends('FrontEnd.master')
 
 @section('title')
-    Contact Information
+    Hubungi Kami
 @endsection
 
 @section('content')
@@ -10,38 +10,38 @@
 <!-- breadcrumb -->
 	<div class="container">
 		<ol class="breadcrumb w3l-crumbs">
-			<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-			<li class="active">Contact Us</li>
+			<li><a href="#"><i class="fa fa-home"></i> Beranda</a></li>
+			<li class="active">Hubungi Kami</li>
 		</ol>
 	</div>
 	<!-- //breadcrumb -->
 	<!-- contact -->
 	<div id="contact" class="contact cd-section">
 		<div class="container">
-			<h3 class="w3ls-title">Contact us</h3>
-			<p class="w3lsorder-text">For any queries or to request a quotation or proposal, please get in touch with us !!!! </p>
+			<h3 class="w3ls-title">Hubungi Kami</h3>
+			<p class="w3lsorder-text">Jangan ragu untuk menghubungi kami kapan saja. </p>
 			<div class="contact-row agileits-w3layouts">
 				<div class="col-xs-6 col-sm-6 contact-w3lsleft">
 					<div class="contact-grid agileits">
-						<h4>Hi! Please help us to serve you better by letting us know some basic details about your event. These are information that you will need to tell us eventually but informing them to us in advance helps us prepare and serve you better !!!</h4><br><br>
+						<h4>Kami senang mendengar dari Anda! Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan, saran, atau masukan. Tim kami siap membantu Anda dengan layanan yang ramah dan responsif. Silakan hubungi kami melalui formulir kontak di situs web ini atau melalui informasi kontak yang tercantum di bawah ini. Kami berharap dapat berkomunikasi dengan Anda segera!</h4><br><br>
 						<form action="#" method="post">
-							<input type="text" name="Name" placeholder="Name" required="">
+							<input type="text" name="Name" placeholder="Nama" required="">
 							<input type="email" name="Email" placeholder="Email" required="">
-							<input type="text" name="Phone Number" placeholder="Phone Number" required="">
-							<textarea name="Message" placeholder="Message..." required=""></textarea>
-							<input type="submit" value="Submit" >
+							<input type="text" name="Phone Number" placeholder="Nomor Telepon" required="">
+							<textarea name="Message" placeholder="Pesan..." required=""></textarea>
+							<input type="submit" value="Kirim" >
 						</form>
 					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 contact-w3lsright">
-					<h6><span>O F C S M S </span>You can also contact us the following ways: </h6>
+					<h6><span>Sate Nusantara </span>Anda juga dapat mengubungi kami dengan cara berikut: </h6>
 					<div class="address-row">
 						<div class="col-xs-2 address-left">
 							<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
 						</div>
 						<div class="col-xs-10 address-right">
-							<h5>Visit Us</h5>
-							<p>Nishat Nagar, Tongi, Gazipur , Bangladesh </p>
+							<h5>Kunjungi Kami</h5>
+							<p>Bandung </p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -50,8 +50,8 @@
 							<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
 						</div>
 						<div class="col-xs-10 address-right">
-							<h5>Mail Us</h5>
-							<p><a href="mailto:info@example.com"> ofcsms.abirhasan@gmail.com</a></p>
+							<h5>Email Kami</h5>
+							<p><a href="mailto:info@example.com"> SateNusantara@gmail.com</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -60,8 +60,8 @@
 							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
 						</div>
 						<div class="col-xs-10 address-right">
-							<h5>Call Us</h5>
-							<p>+88 015 2132 8545</p>
+							<h5>Telepon Kami</h5>
+							<p>+086579373628</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>

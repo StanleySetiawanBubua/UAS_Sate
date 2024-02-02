@@ -4,12 +4,12 @@
         <div class="w3ls-header"><!-- header-one -->
             <div class="container">
                 <div class="w3ls-header-left">
-                    <p>Free home delivery at your doorstep</p>
+                    <p>Pengiriman Sesuai Keinginan Anda</p>
                 </div>
                 <div class="w3ls-header-right">
                     <ul>
                         <li class="head-dpdn">
-                            <i class="fa fa-phone" aria-hidden="true"></i> Call us: +08 01521328545
+                            <i class="fa fa-phone" aria-hidden="true"></i> No Telp: +086579373628
                         </li>
 
                         @if(Session::get('customer_id'))
@@ -47,14 +47,14 @@
                         @endif
 
                         <li class="head-dpdn">
-                            <a href="{{ route('offers')}}"><i class="fas fa-first-order-alt" aria-hidden="true"></i> My Wishlist</a>
+                            <a href="{{ route('offers')}}"><i class="fas fa-first-order-alt" aria-hidden="true"></i> Daftar Keinginan</a>
                         </li>
 
                         <li class="head-dpdn">
-                            <a href="{{ route('offers')}}"><i class="fa fa-gift" aria-hidden="true"></i> Offers</a>
+                            <a href="{{ route('offers')}}"><i class="fa fa-gift" aria-hidden="true"></i> Penawaran</a>
                         </li>
                         <li class="head-dpdn">
-                            <a href="{{ route('help')}}"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a>
+                            <a href="{{ route('help')}}"><i class="fa fa-question-circle" aria-hidden="true"></i> Bantuan</a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +74,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <h1><a class="active" href="{{ url('/') }}">Food Catering Service <span>The Best Food Collection!!!</span></a></h1>
+                        <h1><a class="active" href="{{ url('/') }}">Sate Nusantara <span>Santapan Terbaik Yang Pernah Anda Coba</span></a></h1>
                     </div>
 
                                       {{-- Menu --}}
@@ -96,7 +96,7 @@
 										<div class="row ">
 											<div class="col-sm-12">
 												<ul class="multi-column-dropdown ">
-													<h6>Food Type</h6>
+													<h6>Jenis Menu</h6>
 													  @foreach($categories as $category)
                             <li>
                                 <a class="{{ Route::currentRouteName('category_dish') ? 'active' : '' }}" href="{{ route('category_dish', ['category_id'=>$category->category_id]) }}" >
@@ -110,8 +110,8 @@
 										</div>
 									</ul>
 								</li>
-                            <li><a href="{{ route('about')}}" class="">About Us</a></li>
-                            <li><a href="{{ route('contact')}}">Contact Us</a></li>
+                            <li><a href="{{ route('about')}}" class="">Tentang Kami</a></li>
+                            <li><a href="{{ route('contact')}}">Hubungi Kami</a></li>
                         </ul>
                     </div>
 
@@ -135,7 +135,7 @@
     <!-- banner-text -->
     <div class="banner-text">
         <div class="container">
-            <h2>Delicious Home Made Food from the <br> <span>Best Chefs For you !!!</span></h2>
+            <h2>Rasakan Kenikmatan <br> <span>Tiada Banding </span></h2>
 
 
             {{-- <div class="agileits_search">

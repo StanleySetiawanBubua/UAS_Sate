@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.gmail.com'),
-            'port' => env('MAIL_PORT', 587),
+            'host' => env('MAIL_HOST', 'sandbox.smtp.mailtrap.io'),
+            'port' => env('MAIL_PORT', 2525),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'username' => env('MAIL_USERNAME', '6f0dce5fd9bab6'),
+            'password' => env('MAIL_PASSWORD', 'c606002784d09b'),
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -84,8 +84,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'abirhasan3067@gmail.com'),
-        'name' => env('MAIL_FROM_NAME', 'Online Food Ordering Service Management System'),
+        'address' => env('MAIL_FROM_ADDRESS', 'from@example.com'),
+        'name' => env('MAIL_FROM_NAME', 'Magic Elves'),
     ],
 
     /*
@@ -108,3 +108,4 @@ return [
     ],
 
 ];
+
